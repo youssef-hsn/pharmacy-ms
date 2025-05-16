@@ -9,10 +9,10 @@ export default function LandingPage() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="flex-box flex h-16 items-center justify-between px-2">
           <div className="flex items-center gap-2">
-            <Image src="/placeholder.svg?height=32&width=32" alt="StreamLine Logo" width={32} height={32} />
-            <span className="text-xl font-bold">StreamLine</span>
+            <Image src="/phms-logo.png" alt="PHMS Logo" width={32} height={32} />
+            <span className="text-xl font-bold">PHMS</span>
           </div>
 
           <nav className="hidden md:flex gap-6">
@@ -44,16 +44,15 @@ export default function LandingPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+          <div className="w-full flex-box px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Streamline Your Workflow, Amplify Your Productivity
+                    Modern Pharmacy Management, Simplified
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Automate repetitive tasks, collaborate seamlessly, and focus on what truly matters with our
-                    all-in-one workflow solution.
+                    PHMS is a cloud-based Pharmacy Management System (SaaS) that streamlines prescription processing, inventory, billing, and compliance—empowering pharmacies to deliver better patient care and operate efficiently.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -69,10 +68,10 @@ export default function LandingPage() {
                 </div>
               </div>
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/phms-hero.png"
                 width={550}
                 height={550}
-                alt="Dashboard Preview"
+                alt="PHMS Dashboard Preview"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
               />
             </div>
@@ -81,56 +80,56 @@ export default function LandingPage() {
 
         {/* Features Section */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
-          <div className="container px-4 md:px-6">
+          <div className="flex-box px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Features
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Everything You Need in One Place</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">All-in-One Pharmacy Management</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Our platform provides all the tools you need to automate your workflow and boost productivity.
+                  PHMS provides everything your pharmacy needs: prescription management, inventory tracking, billing, compliance, and more—all in a secure, cloud-based platform.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Task Automation</CardTitle>
+                  <CardTitle>Prescription Management</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Automate repetitive tasks with our intuitive workflow builder. No coding required.
+                    Process, track, and refill prescriptions with ease. Integrated e-prescribing and patient profiles ensure accuracy and compliance.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Team Collaboration</CardTitle>
+                  <CardTitle>Inventory & Stock Control</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Work together seamlessly with real-time collaboration tools and shared workspaces.
+                    Real-time inventory tracking, automated reorder alerts, and expiry management to keep your pharmacy stocked and compliant.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Analytics Dashboard</CardTitle>
+                  <CardTitle>Billing & Insurance</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Track your team's productivity and identify bottlenecks with detailed analytics.
+                    Streamlined billing, insurance claims, and payment processing—all in one place, with full audit trails.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Integrations</CardTitle>
+                  <CardTitle>Compliance & Reporting</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Connect with over 100+ tools and services you already use in your workflow.
+                    Stay compliant with regulatory standards. Generate detailed reports for audits, inventory, and sales with a single click.
                   </p>
                 </CardContent>
               </Card>
@@ -140,15 +139,15 @@ export default function LandingPage() {
 
         {/* Testimonials Section */}
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="flex-box px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Testimonials
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Loved by Teams Worldwide</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Trusted by Pharmacies Nationwide</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Don't just take our word for it. Here's what our customers have to say.
+                  See how PHMS is transforming pharmacy operations and patient care.
                 </p>
               </div>
             </div>
@@ -164,15 +163,14 @@ export default function LandingPage() {
                       className="rounded-full"
                     />
                     <div>
-                      <CardTitle className="text-base">Sarah Johnson</CardTitle>
-                      <CardDescription>Marketing Director, TechCorp</CardDescription>
+                      <CardTitle className="text-base">Dr. Sarah Johnson</CardTitle>
+                      <CardDescription>Owner, Johnson's Pharmacy</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "StreamLine has transformed how our marketing team operates. We've reduced time spent on repetitive
-                    tasks by 40% and can focus on strategy."
+                    "PHMS has made managing prescriptions and inventory effortless. Our workflow is faster, and compliance is no longer a headache."
                   </p>
                 </CardContent>
               </Card>
@@ -188,14 +186,13 @@ export default function LandingPage() {
                     />
                     <div>
                       <CardTitle className="text-base">Michael Chen</CardTitle>
-                      <CardDescription>Product Manager, InnovateCo</CardDescription>
+                      <CardDescription>Pharmacy Manager, CityMed</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "The collaboration features are game-changing. Our remote team feels more connected than ever, and
-                    our product development cycle has shortened by 30%."
+                    "The cloud-based system lets us access everything securely from anywhere. PHMS support is top-notch and always available."
                   </p>
                 </CardContent>
               </Card>
@@ -211,14 +208,13 @@ export default function LandingPage() {
                     />
                     <div>
                       <CardTitle className="text-base">Emily Rodriguez</CardTitle>
-                      <CardDescription>CEO, StartupX</CardDescription>
+                      <CardDescription>Lead Pharmacist, HealthFirst</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    "As a startup founder, I need tools that scale with us. StreamLine has been the perfect solution,
-                    growing alongside our team from 5 to 50 employees."
+                    "PHMS has helped us reduce errors and improve patient satisfaction. The reporting tools are a lifesaver during audits."
                   </p>
                 </CardContent>
               </Card>
@@ -228,7 +224,7 @@ export default function LandingPage() {
 
         {/* Pricing Section */}
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
-          <div className="container px-4 md:px-6">
+          <div className="flex-box px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -236,7 +232,7 @@ export default function LandingPage() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Simple, Transparent Pricing</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Choose the plan that's right for your team. All plans include a 14-day free trial.
+                  Choose the plan that's right for your pharmacy. All plans include a 14-day free trial and full support.
                 </p>
               </div>
             </div>
@@ -245,24 +241,20 @@ export default function LandingPage() {
                 <CardHeader>
                   <CardTitle>Starter</CardTitle>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold">$12</span>
-                    <span className="text-muted-foreground">/month per user</span>
+                    <span className="text-3xl font-bold">$29</span>
+                    <span className="text-muted-foreground">/month per pharmacy</span>
                   </div>
-                  <CardDescription>Perfect for small teams just getting started.</CardDescription>
+                  <CardDescription>Perfect for independent pharmacies.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid gap-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Up to 5 team members</span>
+                      <span>Up to 2 users</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Basic automation workflows</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span>5 integrations</span>
+                      <span>Prescription & inventory management</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
@@ -285,32 +277,28 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold">$29</span>
-                    <span className="text-muted-foreground">/month per user</span>
+                    <span className="text-3xl font-bold">$59</span>
+                    <span className="text-muted-foreground">/month per pharmacy</span>
                   </div>
-                  <CardDescription>Ideal for growing teams with advanced needs.</CardDescription>
+                  <CardDescription>For growing pharmacies with advanced needs.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid gap-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Unlimited team members</span>
+                      <span>Unlimited users</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Advanced automation workflows</span>
+                      <span>Advanced reporting & compliance</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>25 integrations</span>
+                      <span>Insurance & billing integration</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span>Priority support</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span>Advanced analytics</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -322,36 +310,28 @@ export default function LandingPage() {
                 <CardHeader>
                   <CardTitle>Enterprise</CardTitle>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold">$49</span>
-                    <span className="text-muted-foreground">/month per user</span>
+                    <span className="text-3xl font-bold">Custom</span>
+                    <span className="text-muted-foreground">Contact us</span>
                   </div>
-                  <CardDescription>For large organizations with complex workflows.</CardDescription>
+                  <CardDescription>For pharmacy chains and enterprise needs.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid gap-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Unlimited everything</span>
+                      <span>Multi-location support</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Custom automation workflows</span>
+                      <span>Custom integrations</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>Unlimited integrations</span>
+                      <span>Dedicated account manager</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>24/7 dedicated support</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span>Custom reporting</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span>SSO & advanced security</span>
+                      <span>24/7 support</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -367,14 +347,14 @@ export default function LandingPage() {
 
         {/* CTA Section */}
         <section id="cta" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="flex-box px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Ready to Transform Your Workflow?
+                  Ready to Modernize Your Pharmacy?
                 </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Join thousands of teams that have already streamlined their processes and boosted productivity.
+                  Join pharmacies nationwide that trust PHMS to power their operations and deliver better patient care.
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
@@ -401,15 +381,15 @@ export default function LandingPage() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full border-t bg-background">
-        <div className="container flex flex-col gap-8 py-8 md:py-12 lg:py-16">
+      <footer className="px-4 w-full border-t bg-background">
+        <div className="flex-box flex-col gap-8 py-8 md:py-12 lg:py-16">
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Image src="/placeholder.svg?height=32&width=32" alt="StreamLine Logo" width={32} height={32} />
-                <span className="text-xl font-bold">StreamLine</span>
+                <Image src="/phms-logo.png" alt="PHMS Logo" width={32} height={32} />
+                <span className="text-xl font-bold">PHMS</span>
               </div>
-              <p className="text-sm text-muted-foreground">Streamline your workflow, amplify your productivity.</p>
+              <p className="text-sm text-muted-foreground">Cloud-based pharmacy management for modern pharmacies.</p>
               <div className="flex gap-4">
                 <Link href="#" className="text-muted-foreground hover:text-foreground">
                   <Twitter className="h-5 w-5" />
@@ -496,7 +476,7 @@ export default function LandingPage() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} StreamLine, Inc. All rights reserved.
+              &copy; {new Date().getFullYear()} PHMS, Inc. All rights reserved.
             </p>
             <nav className="flex gap-4">
               <Link href="#" className="text-xs text-muted-foreground hover:text-foreground">
