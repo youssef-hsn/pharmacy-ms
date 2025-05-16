@@ -57,7 +57,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button asChild size="lg">
-                    <Link href="#cta">
+                    <Link href="/demo">
                       Start Free Trial
                       <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
